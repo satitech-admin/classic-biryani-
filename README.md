@@ -22,3 +22,6 @@ HTML5, CSS3, JavaScript, Font Awesome and Google Fonts.
 **Sati Technologies**
 
 > Website content, menu pricing, ratings and public business information may change over time and should be verified with the restaurant before final production use.
+
+
+Deployment: GitHub Pages via Actions.
