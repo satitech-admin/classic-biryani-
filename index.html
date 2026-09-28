@@ -48,7 +48,7 @@ button{font:inherit}
 
 .hero{min-height:100vh;display:grid;align-items:center;position:relative;overflow:hidden;padding-top:92px}
 .hero-photo{position:absolute;inset:0;overflow:hidden;background:#0b0705}
-.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center center;opacity:.82;filter:saturate(1.04) contrast(1.03) brightness(.72);transform:none;background:#0b0705}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;opacity:.86;filter:saturate(1.05) contrast(1.02) brightness(.70);transform:none!important;background:#0b0705}
 .hero-photo:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,6,4,.93) 0%,rgba(10,6,4,.78) 38%,rgba(10,6,4,.28) 72%,rgba(10,6,4,.48) 100%);z-index:1}
 .hero-photo:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 72% 42%,rgba(240,182,71,.14),transparent 38%);z-index:1}
 .video-credit{position:absolute;right:16px;bottom:14px;z-index:2;background:rgba(11,7,5,.64);border:1px solid rgba(255,255,255,.12);padding:7px 11px;border-radius:999px;font-size:9px;letter-spacing:.11em;text-transform:uppercase;color:#ddc4aa;backdrop-filter:blur(8px)}
@@ -94,7 +94,7 @@ button{font:inherit}
 .food-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:310px 310px;gap:14px}
 .food-card{position:relative;overflow:hidden;border-radius:22px;background:#1a100b}
 .food-card img{width:100%;height:100%;object-fit:cover;transition:.6s}
-.food-card:hover img{transform:scale(1.05)}
+.food-card:hover img{transform:none}
 .food-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(12,7,5,.9))}
 .food-card .caption{position:absolute;left:20px;right:20px;bottom:18px;z-index:2;color:#fff}
 .food-card .caption small{text-transform:uppercase;letter-spacing:.15em;color:#d7b780;font-size:9px}
@@ -183,7 +183,7 @@ footer{background:#080403;border-top:1px solid var(--line);padding:55px 0 22px}
 .footer-grid a:hover{color:#efc163}
 .footer-bottom{margin-top:36px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:#695d54;font-size:9px}
 .floating-wa{position:fixed;right:20px;bottom:20px;z-index:95;width:57px;height:57px;border-radius:50%;display:grid;place-items:center;background:#20c563;color:#fff;font-size:26px;box-shadow:0 15px 40px rgba(32,197,99,.28);animation:pulse 2.2s infinite}
-@keyframes pulse{50%{transform:scale(1.08)}}
+@keyframes pulse{50%{transform:none}}
 .reveal{opacity:0;transform:translateY(24px);transition:.75s ease}
 .reveal.show{opacity:1;transform:none}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.86);z-index:120;display:none;align-items:center;justify-content:center;padding:24px}
@@ -231,9 +231,9 @@ footer{background:#080403;border-top:1px solid var(--line);padding:55px 0 22px}
 <section class="hero" id="home">
  <div class="hero-photo">
   <video class="hero-video" autoplay muted loop playsinline preload="auto">
-   <source src="https://videos.pexels.com/video-files/7956367/7956367-hd_1080_1920_25fps.mp4" type="video/mp4">
+   <source src="https://www.pexels.com/download/video/30044489/" type="video/mp4">
   </video>
-  <span class="video-credit">Biryani dining experience</span>
+  <span class="video-credit">Aesthetic biryani dining</span>
  </div>
  <div class="container hero-grid">
   <div class="hero-copy reveal">
