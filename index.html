@@ -48,7 +48,7 @@ button{font:inherit}
 
 .hero{min-height:100vh;display:grid;align-items:center;position:relative;overflow:hidden;padding-top:92px}
 .hero-photo{position:absolute;inset:0;overflow:hidden;background:#0b0705}
-.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;opacity:.72;filter:saturate(1.08) contrast(1.08) brightness(.62);transform:scale(1.02)}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center center;opacity:.82;filter:saturate(1.04) contrast(1.03) brightness(.72);transform:none;background:#0b0705}
 .hero-photo:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,6,4,.93) 0%,rgba(10,6,4,.78) 38%,rgba(10,6,4,.28) 72%,rgba(10,6,4,.48) 100%);z-index:1}
 .hero-photo:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 72% 42%,rgba(240,182,71,.14),transparent 38%);z-index:1}
 .video-credit{position:absolute;right:16px;bottom:14px;z-index:2;background:rgba(11,7,5,.64);border:1px solid rgba(255,255,255,.12);padding:7px 11px;border-radius:999px;font-size:9px;letter-spacing:.11em;text-transform:uppercase;color:#ddc4aa;backdrop-filter:blur(8px)}
@@ -231,9 +231,9 @@ footer{background:#080403;border-top:1px solid var(--line);padding:55px 0 22px}
 <section class="hero" id="home">
  <div class="hero-photo">
   <video class="hero-video" autoplay muted loop playsinline preload="auto">
-   <source src="https://www.pexels.com/download/video/5705978/" type="video/mp4">
+   <source src="https://videos.pexels.com/video-files/7956367/7956367-hd_1080_1920_25fps.mp4" type="video/mp4">
   </video>
-  <span class="video-credit">Elegant restaurant ambience</span>
+  <span class="video-credit">Biryani dining experience</span>
  </div>
  <div class="container hero-grid">
   <div class="hero-copy reveal">
